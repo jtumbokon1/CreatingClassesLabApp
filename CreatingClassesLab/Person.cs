@@ -59,5 +59,5 @@ namespace CreatingClassesLab
                 $"Age: {Age}\n" +
                 $"IsWorking: {IsWorking}";
         }
-    }
-}
+    } // class
+} // namespace
