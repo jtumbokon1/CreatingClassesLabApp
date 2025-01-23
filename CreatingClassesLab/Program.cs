@@ -39,7 +39,7 @@ class Program
         string oldestPerson = people.OrderByDescending(p => p.Age).First().FirstName;
         Console.WriteLine($"The oldest person is: {oldestPerson}"); // order list by descending age (starting w/ oldest) then display first person's first name
 
-        foreach (Person p in people)
+        foreach (Person p in people) // display all people with a first name that contains the letter "M"
         {
             if (p.FirstName.Contains("M"))
             {
@@ -47,7 +47,7 @@ class Program
             }
         }
 
-        foreach (Person p in people)
+        foreach (Person p in people) // display all people with a favorite colour of "Blue"
         {
             if (p.FavoriteColour == "Blue")
             {
