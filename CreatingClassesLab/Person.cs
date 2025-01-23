@@ -13,7 +13,11 @@ namespace CreatingClassesLab
         private int age;
 
         // public properties
-        public int PersonId { get; set; }
+        public int PersonId
+        {
+            get { return personId; }
+            set { personId = Math.Abs(value); }
+        }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string FavoriteColour { get; set; }
@@ -24,10 +28,9 @@ namespace CreatingClassesLab
         }
         public bool IsWorking { get; set; }
         // constructor
-        public Person(string firstName, string lastName, string favoriteColour, int age, bool isWorking)
+        public Person(int personId, string firstName, string lastName, string favoriteColour, int age, bool isWorking)
         {
             PersonId = personId;
-            personId++;
             FirstName = firstName;
             LastName = lastName;
             FavoriteColour = favoriteColour;
@@ -37,7 +40,7 @@ namespace CreatingClassesLab
         // public methods
         public string DisplayPersonInfo()
         {
-            return $"{personId}: {FirstName} {LastName}'s favorite coloyur is {FavoriteColour}";
+            return $"{personId}: {FirstName} {LastName}'s favorite colour is {FavoriteColour}";
         }
         public string ChangeFavoriteColour()
         {
