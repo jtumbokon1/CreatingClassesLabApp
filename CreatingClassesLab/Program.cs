@@ -1,4 +1,18 @@
-﻿using CreatingClassesLab;
+﻿/*
+ * CPRG-211-C Lab Creating Classes
+ * Author: Jirch Tumbokon
+ * When: Winter 2025
+ */
+
+/*
+ * This program creates a list of people and displays their information.
+ * It changes the favorite colour of one person, displays the age of another person in 10 years,
+ * and displays the relationship between two people.
+ * It also displays the average age of the people, the youngest person, the oldest person,
+ * all people with a first name that starts with the letter "M", and all people with a favorite colour of "Blue".
+ */
+
+using CreatingClassesLab;
 
 class Program
 {
